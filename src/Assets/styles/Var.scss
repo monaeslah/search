@@ -1,0 +1,53 @@
+$color: (
+  white: #fff,
+  white-90: #fafafa,
+  white-80:#fdfcfe,
+  black: #212121,
+  black-90: #1A0016,
+  black-80: #424242,
+  black-70: #616161,
+  black-60: #757575,
+  black-50: #9e9e9e,
+  black-40: #bdbdbd,
+  black-35:#F0F1F1,
+  black-30: #e0e0e0,
+  black-25: #FAFAFA,
+  black-20: #eeeeee,
+  black-10: #f5f5f5,
+  beige: #fff3e0,
+  purple: #841474,
+  purple-30:#481f8d,
+  pink:#CC3DAA,
+  border: #e2e2e2,
+  beige-90:#B39636,
+  blue: #008ce3,
+  blue-90:#3D6DCC,
+  blue-80:#4285F4,
+  blue-70:#3D95CC,
+  blue-50:#45A8E6,
+  red: #ff4726,
+  red-50:#F55D5D,
+  green: #29cb97,
+  green-80:#36B38B,
+  green-85:#3DCC9F,
+  orange: #f3ad37,
+  gray: #8b8b8b,
+  gray-95:#A2A3A3,
+  gray-90:#B0B0B0,
+  gray-80:#FBFBFB,
+  gray-70:#DDDDDD,
+  lightGray: #c7c7c7,
+  bluishGray: #f0f1f2
+);
+
+
+
+
+$strength-colors: (#ff4726, #ffcc26, #ffcc26, #5db881);
+$strength-gap: 6px;
+
+// function for colors
+
+@function color($color-name) {
+  @return map-get($color, $color-name);
+}

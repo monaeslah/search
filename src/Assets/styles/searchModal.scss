@@ -1,0 +1,125 @@
+#search-input {
+  input {
+    width: 90%;
+    padding: 10px 15px 10px 30px;
+    font-size: 12px;
+    background-image: url("../image/search.svg");
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    background-size: 16px;
+    box-shadow: color(black-40);
+  }
+
+
+  #results {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .scroll {
+      width: 95%;
+      padding: 5px 18px;
+      position: absolute;
+      top: 0px;
+      background-color: color(white);
+      border: 1px solid color(black-40);
+      border-radius: 1px 1px 10px 10px;
+
+      .suggest {
+        cursor: pointer;
+        padding: 5px 18px;
+        margin-top: 4px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        font-size: 12px;
+        color: color(black);
+        background-color: color(white);
+        &:hover {
+          border-radius: 5px;
+          font-style: 12px;
+          color: color(black);
+          background-color: color(black-40);
+        }
+      }
+    }
+    .back_result {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      .back_result_data {
+        display: flex;
+        border: 1px solid color(black-40);
+        margin: 3px 0 3px 0;
+        border-radius: 2px;
+        flex-direction: row;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .content {
+          padding: 5px 10px;
+          .artist {
+            font-weight: bold;
+          }
+          .genre,
+          .release {
+            color: color(black-50);
+          }
+        }
+      }
+    }
+  }
+  .count {
+    direction: ltr;
+    z-index: 1;
+    border-radius: 100px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    border: 3px solid color(white);
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    color: color(white);
+    background-color: color(black);
+  }
+
+  .image {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin-left: -12px;
+
+    &:hover {
+      span {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(50%, -4px);
+      }
+    }
+
+    img {
+      width: 26px;
+      height: 26px;
+      border-radius: 13px;
+      border: 3px solid color(white);
+      background-color: color(background);
+    }
+
+    span {
+      width: max-content;
+      position: absolute;
+      right: -10px;
+      transform: translate(50%, 0px);
+      font-size: 11px;
+      color: #fff;
+      background-color: #212121;
+      display: flex;
+      padding: 4px 8px;
+      border-radius: 4px;
+      top: -25px;
+      opacity: 0;
+      transition: 100ms all ease-in-out;
+    }
+  }
+}

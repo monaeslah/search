@@ -41,7 +41,7 @@ class SearchMusic extends Component {
     return (
       <Fragment>
         <div id="search-input">
-          <div className="col-lg-12 col-md-12 col-sm=12">
+          <div className="main-area">
             <input
               value={searchInput?.toUpperCase()}
               onChange={this.handleSearch}
